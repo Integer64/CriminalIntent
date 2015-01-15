@@ -12,13 +12,9 @@ import android.widget.EditText;
 
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class CrimeFragment extends Fragment {
-
-     private Crime mCrime;
-     private EditText mTitleField;
+    Crime mCrime;
+    EditText mTitleField;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,21 +26,18 @@ public class CrimeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, parent, false);
 
-        mTitleField = (EditText) v.findViewById(R.id.crime_title);
+        mTitleField = (EditText)v.findViewById(R.id.crime_title);
         mTitleField.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // Здесь намеренно оставлено пустое место
+            public void onTextChanged(CharSequence c, int start, int before, int count) {
+                mCrime.setTitle(c.toString());
             }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCrime.setTitle(s.toString());
+            public void beforeTextChanged(CharSequence c, int start, int count, int after) {
+                // this space intentionally left blank
             }
 
-            @Override
-            public void afterTextChanged(Editable s) {
-                // И здесь тоже
+            public void afterTextChanged(Editable c) {
+                // this one too
             }
         });
 
