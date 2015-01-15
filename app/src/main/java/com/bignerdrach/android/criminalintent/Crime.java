@@ -3,9 +3,7 @@ package com.bignerdrach.android.criminalintent;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * Created by ivan on 15.01.15.
- */
+
 public class Crime {
     private UUID mId;
     private String mTitle;
@@ -44,5 +42,10 @@ public class Crime {
 
     public void setSolved(boolean solved) {
         mSolved = solved;
+    }
+
+    @Override
+    public String toString() {
+        return mTitle;
     }
 }
