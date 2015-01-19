@@ -119,8 +119,8 @@ public class CrimeFragment extends Fragment {
             if(s.equals("1")){
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 TimePickerFragment dialogTime = TimePickerFragment.newInstance(mCrime.getDate());
-                dialogTime.setTargetFragment(CrimeFragment.this,REQUEST_DATE);
-                dialogTime.show(fm, DIALOG_DATE);
+                dialogTime.setTargetFragment(CrimeFragment.this,REQUEST_TIME);
+                dialogTime.show(fm, DIALOG_TIME);
             }
         }
 
