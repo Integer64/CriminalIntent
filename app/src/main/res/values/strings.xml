@@ -8,5 +8,14 @@
     <string name="crime_details_label">Details</string>
     <string name="crime_solved_label">Solved?</string>
     <string name="crimes_title">Crimes</string>
+    <string name="date_picker_title">Date of crime:</string>
+    <string name="time_picker_title">Time of crime:</string>
+    <string name="change_time_picker_title">Change:</string>
+    <string name="change_date_title">Date</string>
+    <string name="change_time_title">Time</string>
+    <string-array name="whatChange">
+        <item>@string/change_date_title</item>
+        <item>@string/change_time_title</item>
+    </string-array>
 
 </resources>
