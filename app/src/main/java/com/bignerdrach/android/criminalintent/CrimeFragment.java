@@ -47,7 +47,7 @@ public class CrimeFragment extends Fragment {
     }
 
     public void updateDate(){
-        mDateButton.setText(DateFormat.format("EEEE, MMM dd, hh:mm, yyyy",mCrime.getDate()));
+        mDateButton.setText(DateFormat.format("EEEE, MMM dd, HH:MM, yyyy",mCrime.getDate()));
     }
 
     @Override
