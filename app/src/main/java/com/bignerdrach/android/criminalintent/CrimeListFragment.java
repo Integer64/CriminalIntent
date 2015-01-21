@@ -1,7 +1,9 @@
 package com.bignerdrach.android.criminalintent;
 
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.Menu;
@@ -92,6 +94,7 @@ public class CrimeListFragment extends ListFragment {
         inflater.inflate(R.menu.frgament_crime_list, menu);
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
