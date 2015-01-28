@@ -17,7 +17,8 @@
     <string name="show_subtitle">Show Subtitle</string>
     <string name="hide_subtitle">Hide Subtitle</string>
     <string name="subtitle">If you see something, say something.</string>
-    <string name="delete_crime">Delete</string>
+    <string name="delete_crime">Delete Crime</string>
+    <string name="take">Take!</string>
     <string-array name="whatChange">
         <item>@string/change_date_title</item>
         <item>@string/change_time_title</item>
